@@ -25,10 +25,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="announcements.html">Announcements</a></li>
-							<li><a href="ourteam.html">Our Team</a></li>
-             						<li class="active"><a href="resources.html">Resources</a></li>
+							<li><a href="index">Home</a></li>
+							<li><a href="announcements">Announcements</a></li>
+							<li><a href="ourteam">Our Team</a></li>
+             						<li class="active"><a href="resources">Resources</a></li>
             </ul>
 						<ul class="icons">
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
