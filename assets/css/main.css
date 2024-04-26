@@ -4414,7 +4414,7 @@ input, select, textarea {
 		padding: 0.5rem auto 1rem auto;
 		width: calc(100%);
 		z-index: 2;
-		background-color: rgba(100, 150, 100, 1)
+		background-color: #717981;
 	}
 
 		#copyright input, #copyright select, #copyright textarea {
