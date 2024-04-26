@@ -3224,7 +3224,6 @@ input, select, textarea {
 		transition: opacity 0.5s ease;
 		position: relative;
 		z-index: 1;
-		overflow: hidden;
 	}
 
 		#wrapper > .bg {
@@ -3234,7 +3233,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/greenbluebackground.jpg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/2020MIT.JPG");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3568,7 +3567,7 @@ input, select, textarea {
 			border-width: 5px !important;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
 			font-size: 2.25rem;
-			font-weight: 900;ffff7e
+			font-weight: 900;
 			letter-spacing: 0.075em;
 			line-height: 1;
 			padding: 1rem 1.75rem;
@@ -3604,7 +3603,6 @@ input, select, textarea {
 		}
 
 /* Nav */
-
 	#nav {
 		color: #ffffff;
 		display: -moz-flex;
@@ -3620,12 +3618,20 @@ input, select, textarea {
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
 		overflow: hidden;
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0;
 		padding: 0 2rem 0 0;
-		position: relative;
-		width: calc(100% - 4rem);
-		max-width: 72rem;
-		z-index: 2;
+		width: calc(100%);
+		z-index: 20;
 	}
+	#nav.pinned {
+		-moz-transition: -moz-transform 1s ease, opacity 1s ease;
+		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
+		transition: transform 1s ease, opacity 1s ease;
+		background: rgba(100, 170, 100, 1);
+	  }
 
 		#nav ul.divided li {
 			border-top-color: #ffffff;
@@ -3648,9 +3654,16 @@ input, select, textarea {
 		}
 
 		#nav a {
-			color: #ffffff;
+			color: #fff;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
+		#nav.pinned a {
+			-moz-transition: -moz-transform 1s ease, opacity 1s ease;
+			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
+			transition: transform 1s ease, opacity 1s ease;
+			color: #000;
+		  }
 
 			#nav a:hover {
 				border-bottom-color: transparent;
@@ -3658,7 +3671,7 @@ input, select, textarea {
 			}
 
 		#nav strong, #nav b {
-			color: #ffffff;
+			color: #fff;
 		}
 
 		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
@@ -3753,14 +3766,19 @@ input, select, textarea {
 
 		}
 
+/* navbar logo*/
+#logoImage{
+	width: "30px";
+	
+}
+
 /* Main */
 
 	#main {
 		background-color: #ffffff;
 		position: relative;
 		margin: 0 auto;
-		width: calc(100% - 4rem);
-		max-width: 72rem;
+		width: calc(100%);
 		z-index: 2;
 	}
 
@@ -3958,8 +3976,7 @@ input, select, textarea {
 		cursor: default;
 		position: relative;
 		margin: 0 auto;
-		width: calc(100% - 4rem);
-		max-width: 72rem;
+		width: calc(100%);
 		z-index: 2;
 	}
 
@@ -4385,7 +4402,7 @@ input, select, textarea {
 	#copyright {
 		color: #ffffff;
 		position: relative;
-		color: rgba(255, 255, 255, 0.25);
+		color: rgba(255, 255, 255, 0.75);
 		cursor: default;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.8rem;
@@ -4394,10 +4411,10 @@ input, select, textarea {
 		line-height: 1.5;
 		text-align: center;
 		text-transform: uppercase;
-		margin: 4rem auto 8rem auto;
-		width: calc(100% - 4rem);
-		max-width: 72rem;
+		padding: 0.5rem auto 1rem auto;
+		width: calc(100%);
 		z-index: 2;
+		background-color: rgba(100, 150, 100, 1)
 	}
 
 		#copyright input, #copyright select, #copyright textarea {
