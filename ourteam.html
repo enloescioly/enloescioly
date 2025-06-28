@@ -6,7 +6,44 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.collapsible {
+				background-color: #fffdfd;
+				color: white;
+				cursor: pointer;
+				padding: 18px;
+				width: 100%;
+				border: none;
+				text-align: center;
+				outline: none;
+				font-size: 15px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.collapsible:hover {
+				background-color: #fffefe;
+			}
+
+			.collapsible.active {
+				background-color: #ffffff;
+			}
+
+			.content {
+				padding: 0 18px;
+				display: none;
+				overflow: hidden;
+				background-color: #f1f1f1;
+			}
+
+			.teams-title {
+				margin-top: 50px !important;
+
+			}
+		</style>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -22,6 +59,7 @@
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="announcements.html">Announcements</a></li>
+							<li><a href="invitational.html">Nest SO</a></li>
 							<li class="active"><a href="ourteam.html">Our Team</a></li>
 							<li><a href="resources.html">Resources</a></li>
 							<li><a href="sponsors.html">Sponsors</a></li>
@@ -38,20 +76,51 @@
 							<section class="post">
 								<header class="major">
 									<h1>Captains</h1>
-									<p>Our leadership is run by a 5-person board and our amazing coach, Ms. Volaric </p>
+									<p>Our leadership is run by a 5-person board and our amazing coaches, Ms. Volaric and Ms. Grampp! </p>
 								</header>
 									<h2>Senior Captains</h2>
+									<strong>Serena Zhang</strong>, serenazhang26@gmail.com<br /><strong>Kevin Hu</strong>, kh9319361@gmail.com<p></strong>
+									<h2>Junior Captains</h2>
+									<strong>Naren Pai</strong>, narenkpai@gmail.com<br /><strong>Amrutha Sai Kara</strong>, amrutha.kara@gmail.com<br /><strong>Vivian Zhang</strong>, viviandzhang211@gmail.com<p></strong>
+									<h2>coaches</h2>
+									<strong>Lisa Volaric</strong>, lvolaric@enloescioly.org </br> <strong>Kimberly Grampp</strong>, kflahertygrampp@wcpss.net</p>
+								<h2>Previous Boards</h2>
+								<button type="button" class="collapsible">2024-2025</button>
+								<div class="content">
+ 							 	<h2>Senior Captains</h2>
 									<strong>William Feng</strong>, wsfeng714@gmail.com <br /><strong>Thanush Patlolla</strong>, thanushrpatlolla@gmail.com<p></strong>
 									<h2>Junior Captains</h2>
 									<strong>Serena Zhang</strong>, serenazhang26@gmail.com<br /><strong>Kevin Hu</strong>, kh9319361@gmail.com<br /><strong>Kaiwen Yao</strong>, kelvinyounger1@gmail.com<p></strong>
-									<h2>Coach</h2>
+									<h2>coaches</h2>
 									<strong>Lisa Volaric</strong>, lvolaric@enloescioly.org </br> <strong>Kimberly Grampp</strong>, kflahertygrampp@wcpss.net</p>
-								<header class="major">
+								</div>
+
+								<script>
+									var coll = document.getElementsByClassName("collapsible");
+									var i;
+									
+									for (i = 0; i < coll.length; i++) {
+									  coll[i].addEventListener("click", function() {
+										this.classList.toggle("activte");
+										var content = this.nextElementSibling;
+										if (content.style.display === "block") {
+										  content.style.display = "none";
+										} else {
+										  content.style.display = "block";
+										}
+									  });
+									}
+									</script>
+
+								<header class="major teams-title">
 									<h1>Teams</h1>
-									<p>Enloe Science Olympiad consists of three 15-18 person teams: Varsity and two JV teams. Teams are selected by one's performance in the tryouts.<br /><br />
-									   The teams for the 2024-2025 season will be selected around October/November. Good luck!</p>
+									<p>Enloe Science Olympiad consists of three 15-18 person teams: Varsity and two JV teams.<br /><br />
+									The teams for the 2025-2026 season will be selected around November/December. Email us ( <a href="mailto:enloescienceolympiad@gmail.com">enloescienceolympiad@gmail.com</a> ) us for the Discord Link! Good luck!  </p>
+									
 								</header>
+
 							</section>
+
 
 					</div>
 
